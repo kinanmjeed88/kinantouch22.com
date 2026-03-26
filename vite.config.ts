@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Root domain configuration (Crucial for kinantouch.com)
+  // Root domain configuration (Crucial for kinanmjeed88.github.io/kinantouch22.com)
   base: '/', 
   build: {
     outDir: 'dist',
