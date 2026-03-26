@@ -1,0 +1,15 @@
+{
+  "name": "techtouch-cms",
+  "version": "1.0.0",
+  "description": "Static Site Generator for TechTouch",
+  "main": "scripts/generate.js",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate.js"
+  },
+  "dependencies": {
+    "@google-analytics/data": "^5.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^17.3.1"
+  }
+}

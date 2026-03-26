@@ -1,0 +1,100 @@
+[
+  {
+    "id": "bot_requests",
+    "name": "بوت الطلبات",
+    "desc": "بوت على التيليكرام لاستقبال طلبات التطبيقات والالعاب المعدلة",
+    "url": "https://t.me/techtouchAI_bot",
+    "icon": "star",
+    "color": "purple",
+    "iconData": {
+      "type": "image",
+      "value": "assets/images/1770513854330_IMG_20260130_132519_0237.webp",
+      "size": "128"
+    }
+  },
+  {
+    "id": "apps_games",
+    "name": "Techtouch7",
+    "desc": "قناة تطبيقات الأندرويد",
+    "url": "https://t.me/techtouch7",
+    "icon": "smartphone",
+    "color": "green"
+  },
+  {
+    "id": "discussions",
+    "name": "مناقشات Techtouch",
+    "desc": "تعليقات لحل المشاكل وغيرها",
+    "url": "https://t.me/techtouch6",
+    "icon": "message-circle",
+    "color": "gray"
+  },
+  {
+    "id": "games_channel",
+    "name": "قناة الالعاب",
+    "desc": "نشر العاب اندرو معدلة",
+    "url": "https://t.me/techtouch0",
+    "icon": "gamepad-2",
+    "color": "red"
+  },
+  {
+    "id": "games_discuss",
+    "name": "مناقشات الالعاب",
+    "desc": "كروب مناقشة الالعاب",
+    "url": "https://t.me/+pScKzHOQwslhMmJi",
+    "icon": "message-square",
+    "color": "rose"
+  },
+  {
+    "id": "pc_ps",
+    "name": "قناة PC & PS",
+    "desc": "مايخص ps وبرامج الوندوز",
+    "url": "https://t.me/techtouch4",
+    "icon": "monitor",
+    "color": "indigo"
+  },
+  {
+    "id": "pc_ps_discuss",
+    "name": "مناقشات PC & PS",
+    "desc": " الكمبيوتر والبليستيشن",
+    "url": "https://t.me/+J1Up1q8AYgs2MWU6",
+    "icon": "message-square",
+    "color": "indigo"
+  },
+  {
+    "id": "iphone",
+    "name": "قناة الايفون",
+    "desc": "نشر مايخص الايفون  ",
+    "url": "https://t.me/+yqBOH5BBBEM0MTQ6",
+    "icon": "smartphone",
+    "color": "slate"
+  },
+  {
+    "id": "iphone_discuss",
+    "name": "مناقشات الايفون",
+    "desc": "حل المشاكل للايفون ومناقشتها",
+    "url": "https://t.me/+t1W3_jSUjOw0ZDYy",
+    "icon": "message-square",
+    "color": "slate"
+  },
+  {
+    "id": "live",
+    "name": "قناة البث المباشر",
+    "desc": "روابط بث مباشره للرياضه",
+    "url": "https://t.me/techtouch9",
+    "icon": "tv",
+    "color": "orange"
+  },
+  {
+    "id": "all_folder",
+    "name": "المجلد الكامل",
+    "desc": "كل القنوات على التيليكرام",
+    "url": "https://t.me/addlist/Gxcy1FFJONhkMjFi",
+    "icon": "sparkles",
+    "color": "blue",
+    "iconData": {
+      "type": "lucide",
+      "value": "sparkles",
+      "size": "24"
+    }
+  }
+]
