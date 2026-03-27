@@ -794,7 +794,28 @@ window.saveSettingsData = async () => {
 };
 
 window.toggleGithubSettings = () => document.getElementById('ghModal').classList.toggle('hidden');
-window.saveGhSettings = () => { localStorage.setItem('gh_owner', document.getElementById('ghOwner').value.trim()); localStorage.setItem('gh_repo', document.getElementById('ghRepo').value.trim()); localStorage.setItem('gh_token', document.getElementById('ghToken').value.trim()); location.reload(); };
+window.saveGhSettings = () => { 
+    let owner = document.getElementById('ghOwner').value.trim();
+    let repo = document.getElementById('ghRepo').value.trim();
+    let token = document.getElementById('ghToken').value.trim();
+    
+    // Auto sanitize if user pasted full URL
+    if (owner.includes('github.com/')) {
+        const parts = owner.split('github.com/')[1].split('/');
+        owner = parts[0];
+        if (parts[1]) repo = parts[1].replace('.git', '');
+    }
+    if (repo.includes('github.com/')) {
+        const parts = repo.split('github.com/')[1].split('/');
+        owner = parts[0];
+        if (parts[1]) repo = parts[1].replace('.git', '');
+    }
+    
+    localStorage.setItem('gh_owner', owner); 
+    localStorage.setItem('gh_repo', repo); 
+    localStorage.setItem('gh_token', token); 
+    location.reload(); 
+};
 
 function arabicToLatin(str) { if(!str) return ''; const map = { 'أ':'a','إ':'e','آ':'a','ا':'a','ب':'b','ت':'t','ث':'th','ج':'j','ح':'h','خ':'kh','د':'d','ذ':'th','ر':'r','ز':'z','س':'s','ش':'sh','ص':'s','ض':'d','ط':'t','ظ':'z','ع':'a','غ':'gh','ف':'f','ق':'q','ك':'k','ل':'l','م':'m','ن':'n','ه':'h','و':'w','ي':'y','ى':'a','ة':'h','ء':'a','ئ':'e','ؤ':'o', '٠':'0','١':'1','٢':'2','٣':'3','٤':'4','٥':'5','٦':'6','٧':'7','٨':'8','٩':'9', ' ': '-' }; return str.split('').map(char => map[char] || char).join(''); }
 window.autoSlug = () => { const title = document.getElementById('pTitle').value; if (document.getElementById('pSlug').dataset.mode === 'new') { let slug = arabicToLatin(title).toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-'); if(slug.length < 2) slug = 'post-' + Date.now(); document.getElementById('pSlug').value = slug.substring(0, 20); } };
